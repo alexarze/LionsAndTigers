@@ -78,15 +78,18 @@ class ViewController: UIViewController {
     
     func updateView() {
         
+        var currentArray = []
+        var openAnimal:AnyObject
+        
         if currentAnimal.species == "Tiger" {
-            let currentArray = tigerArray
+            currentArray = tigerArray
             println("\(currentIndex)")
-            let openAnimal:Tiger = currentArray[currentIndex]
+            openAnimal = currentArray[currentIndex]
         }
         else {
-            let currentArray = lionArray
+            currentArray = lionArray
             
-            let openAnimal = currentArray[currentIndex]
+            openAnimal = currentArray[currentIndex]
         }
         
         if currentIndex < 0 {
